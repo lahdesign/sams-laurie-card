@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     }
 
 
@@ -49,7 +49,7 @@ h1{
 h2{
   margin-top: 0px;
   padding-top: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
+  /* font-family: 'Kumbh Sans', sans-serif; */
   font-weight: 200;
   font-size: 10px;
   text-align: center;
@@ -61,12 +61,12 @@ h2{
 h3{
   margin-top: 0px;
   padding-top: 0px;
-  font-family: 'Kumbh Sans', sans-serif;
+  /* font-family: 'Kumbh Sans', sans-serif; */
   font-weight: 400;
   font-size: 10px;
   text-align: center;
-  position: relative; 
-  top: 180px;
+  /* position: relative;  */
+  /* top: 180px; */
 }
 /* How links are styled on page load and also after a link has been visited */
 a:link, a:visited {
@@ -79,15 +79,17 @@ a:link, a:visited {
 a:hover {
   color: rgb(198, 79, 181);
 }
-.icon-container{
-  width:20%;
+.icon-wrapper{
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-template-rows: 1fr;
+
   grid-gap:10px;
   }
+  svg{
+    width:20px;
+  }
+ 
 /* specific styling to scale elements down for mobile */
 @media only screen and (max-width: 900px) {
   .card{
@@ -112,6 +114,6 @@ a:hover {
   
   h3{
     font-size:17px;
-    top: 60px;
+    /* top: 60px; */
   }
   }
